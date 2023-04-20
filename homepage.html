@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta name="viewport" content="width=device-wdth, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <img src="./yo.jpg" alt="My logo" />
+      <nav>
+        <ul>
+          <li><a href="#contact-form">Contact me</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#tech-stack">My SuperPowers</a></li>
+          <li><a href="#prices">How much it Cost</a></li>
+        </ul>
+      </nav>
+      <form action="" method="get">
+        <div>
+          <label for="searchbar">Search for content: </label>
+          <input id="searchbar" type="text" placeholder="Search..." />
+        </div>
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <main>
+      <section>
+        <h2 id="about-me">About me</h2>
+        <article>
+          <h3>information</h3>
+          <img style="max-width: 500px; border-radius: 50%" src="./yo.jpg alt=" />
+          <p>I'm from Buenos Aires, now living in Finland.</p>
+          <p>I love make modern websites.</p>
+
+          <details>
+            <summary>Finland</summary>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/watch?v=BQTVS06bGcw&ab_channel=SBSDateline"
+              title="finland"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Happiest country in the world for many years.</p>
+          </details>
+        </article>
+        <article>
+          <h3 id="tech-stack">Superpowers</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+          </ul>
+        </article>
+      </section>
+      <section>
+        <h2 id="contact-form">contact</h2>
+        <p>DO u need A WEB site? Pleaso, do <em>not</em> hesitate to contact me!</p>
+        <p>Please fill out the form below, if interested. You will not commit legally to anything by doing so.</p>
+        <form action="mailto:marcelo.herlan@integrify.io" method="post" enctype="text/plain">
+          <fieldset>
+            <div>
+              <label for="name">name:</label>
+              <input type="text" name="First name" id="first-name" required />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" name="Email address" id="last-name" required /> <br />
+            </div>
+            <div>
+              <label for="needsText">your needs</label> <br />
+              <textarea name="needs" id="needsText" cols="30" rows="10" required></textarea> <br />
+            </div>
+            <div>
+              <br />
+            </div>
+            <button aria-label="submit button" type="submit">Submit</button>
+            <button aria-label="reset button" type="reset">Reset</button>
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <h2 id="prices">Prices</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Number of pages</th>
+
+              <th scope="col">Starting price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1 - 2</th>
+              <td>150 e</td>
+            </tr>
+            <tr>
+              <th scope="row">3 - 5</th>
+              <td>350 e</td>
+            </tr>
+            <tr>
+              <th scope="row">6 or more</th>
+              <td>1000e</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>&copy;Marcelo Herlan</footer>
+  </body>
 </html>
